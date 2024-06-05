@@ -1,2 +1,1 @@
-<!-- WDS - Async vs Defere -->
-<!-- we're going to use "JSON placeholder" bs we want our user to come from an API - /users -->
+#Here I created a filter bar, future updates will be to filter diffrent projects on a portfolio
