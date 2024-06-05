@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- WDS video about defere "Async vs defere" -->
+    <title>Search Bar</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="search-wrapper">
+        <label class="search-title" for="search">Search User</label>
+        <input type="search" id="search" data-search />
+      </div>
+      <div class="cards-wrapper">
+        <div class="user-cards" data-user-cards-container></div>
+        <!--allow creating HTML that doesn't show up on the page -->
+        <template data-user-template="template">
+          <div class="card">
+            <div class="header" data-header></div>
+            <div class="body" data-body></div>
+            <div class="phone" data-phone></div>
+          </div>
+        </template>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
