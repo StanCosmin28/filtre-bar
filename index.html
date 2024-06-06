@@ -18,6 +18,7 @@
         <!--allow creating HTML that doesn't show up on the page -->
         <template data-user-template="template">
           <div class="card">
+            <button class="close" data-close-btn>X</button>
             <div class="header" data-header></div>
             <div class="body" data-body></div>
             <div class="phone" data-phone></div>
@@ -30,17 +31,21 @@
       <input class="form form-email" type="email" />
       <input class="form form-phone" type="number" />
     </form> -->
-    <form>
-      <label for="name">Name</label><br />
-      <input type="text" id="form-name" value="" /> <br />
-      <label for="email">Email</label><br />
-      <input type="text" id="form-email" value="" /> <br />
-      <label for="number">Number</label><br />
-      <input type="number" id="form-phone" value="" /> <br />
-      <button id="submit">Submit</button><br />
+    <form class="form-data">
+      <div class="form-container">
+        <label for="name">Name</label><br />
+        <input type="text" id="form-name" value="" /> <br />
+        <label for="email">Email</label><br />
+        <input type="text" id="form-email" value="" /> <br />
+        <label for="number">Number</label><br />
+        <input type="number" id="form-phone" value="" /> <br />
+        <div class="srr-btn-container">
+          <button class="srr-btn" id="submit">Submit</button>
+          <button class="srr-btn" id="reset">Reset</button>
+          <button class="srr-btn" id="remove_last">Remove Last</button>
+        </div>
+      </div>
     </form>
-    <button id="reset">Reset</button>
-    <button id="remove_last">Remove Last</button>
     <script src="script.js"></script>
   </body>
 </html>
